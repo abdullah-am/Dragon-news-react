@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { CiBookmark, CiShare2 } from 'react-icons/ci';
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
   return (
@@ -56,9 +57,9 @@ const NewsCard = ({ news }) => {
         </p>
         <p className="text-sm text-gray-700 line-clamp-2">{news.details}</p>
         {news.details.length > 200 && (
-          <a href="#" className="text-blue-500 hover:underline text-sm font-medium">
+          <Link to={`/newsdetail/${news.id}`} className="text-blue-500 hover:underline text-sm font-medium">
             Read More
-          </a>
+          </Link>
         )}
 
 
