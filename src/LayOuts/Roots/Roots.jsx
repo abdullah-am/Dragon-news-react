@@ -11,6 +11,9 @@ export const Roots = () => {
         <div>
             <header>
                 <Header></Header>
+                {
+                    import.meta.env.VITE_name
+                }
                 <section className='w-11/12 mx-auto mt-5'>
                     <Latest></Latest>
                 </section>
